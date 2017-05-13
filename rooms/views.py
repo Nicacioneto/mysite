@@ -13,9 +13,9 @@ def new(request, room_id):
 
 
 def index(request):
-    latest_room_list = Room.objects.order_by('-pub_date')[:5]
+    room_list = Room.objects.all()
     template = loader.get_template('rooms/index.html')
     context = {
-        'latest_room_list': latest_room_list
+        'room_list': room_list
     }
     return render(request, 'rooms/index.html', context)

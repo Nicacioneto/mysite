@@ -1,6 +1,6 @@
-{% if latest_room_list %}
+{% if room_list %}
     <ul>
-    {% for room in latest_room_list %}
+    {% for room in room_list %}
         <li><a href="{% url 'rooms:show' room.id %}">{{  room.room_title }}</a></li
     {% endfor %}
     </ul>
