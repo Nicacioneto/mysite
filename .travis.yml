@@ -14,7 +14,7 @@ env:
 # Install some packages before install django
 install:
 
-    - pip install Django ==$DJANGO_VERSION
+    - pip install Django
 
     - pip install nose
 
