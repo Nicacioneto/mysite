@@ -1,10 +1,30 @@
-language: python
-install:
-  - pip install tox
-script:
-  - tox
+# Main liguage of the project
+language:
+    python
+
+# Versions of python wich your project accepted
+python:
+    - "3.5"
+
+# Setting Django environment
 env:
-  - TOXENV=django15
-  - TOXENV=django16
-  - TOXENV=coverage
+    - DJANGO_VERSION=1.11.1
+
+
+# Install some packages before install django
+install:
+
+    - pip install nose
+
+    - pip install coverage
+
+    - pip install flake8
+
+    - pip install factory_boy
+
+
+script:
+    - python manage.py migrate
+    - coverage run --source='.' manage.py test rooms
+    - coverage report
 
