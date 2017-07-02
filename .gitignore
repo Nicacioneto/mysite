@@ -1,0 +1,5 @@
+.idea/
+.cache/
+.coverage
+coverage.xml
+mysite/__pycache__/
