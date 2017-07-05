@@ -1,0 +1,9 @@
+django
+
+psycopg2
+
+coverage
+
+flake8
+
+factory_boy

@@ -3,3 +3,5 @@
 .coverage
 coverage.xml
 mysite/__pycache__/
+mysite/rooms/migrations/__pycache__/
+
