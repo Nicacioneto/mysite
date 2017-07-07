@@ -14,3 +14,10 @@
 
 [![Docker Build
 Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/nicacioneto/mysite/builds/)
+
+
+Para executar o projeto através do docker execute:
+
+´$ sudo docker-compose build´
+
+´$ sudo docker-compose up`

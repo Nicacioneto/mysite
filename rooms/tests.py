@@ -50,7 +50,7 @@ class ViewTest(TestCase):
 
         quarto_2 = RoomEconimicFactory(created_date=timezone.now())
         quarto_2.publish()
-        resp = self.client.get('/rooms/')
+        resp = self.client.get('')
         '''HTTP Code 200 = The request was fulfilled.'''
         self.assertEqual(resp.status_code, 200)
         self.assertTrue('room_list' in resp.context)
