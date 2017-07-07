@@ -1,5 +1,4 @@
 FROM python:3
- MAINTEINER nicacionetobsb@gmail.com
  ENV PYTHONUNBUFFERED 1
  RUN mkdir /code
  WORKDIR /code
